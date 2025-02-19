@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserService.Protos";
+
+// gRPC Service
+service UserGrpcServices {
+  rpc GetUser (UserRequest) returns (UserResponse);
+  rpc GetAllUsers (EmptyRequest) returns (UserListResponse);
+}
+
+// Request & Response Messages
+message UserRequest {
+  int32 userId = 1;
+}
+
+message UserResponse {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message EmptyRequest {}
+
+message UserListResponse {
+  repeated UserResponse users = 1;
+}
