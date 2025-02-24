@@ -6,6 +6,7 @@ option csharp_namespace = "UserService.Protos";
 service UserGrpcServices {
   rpc GetUser (UserRequest) returns (UserResponse);
   rpc GetAllUsers (EmptyRequest) returns (UserListResponse);
+  rpc AddUser (AddUserRequest) returns (AddUserResponse);
 }
 
 // Request & Response Messages
@@ -23,4 +24,12 @@ message EmptyRequest {}
 
 message UserListResponse {
   repeated UserResponse users = 1;
+}
+message AddUserResponse {
+	int32 id=1;
+	string name=2;
+}
+message AddUserRequest {
+  string name = 2;
+  string email = 3;
 }
