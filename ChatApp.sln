@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{2F377705-1B49-4075-9327-7CC1576DEDA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatService", "ChatService\ChatService.csproj", "{6A91E21C-0566-4D83-A306-B0045EA1866F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{5AF03BB3-61A5-4A7A-8480-E46BC863E232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api Gateway", "Api Gateway\Api Gateway.csproj", "{9456DCFD-4A17-4A38-AFBB-0A211CF8E0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5AF03BB3-61A5-4A7A-8480-E46BC863E232}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF03BB3-61A5-4A7A-8480-E46BC863E232}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF03BB3-61A5-4A7A-8480-E46BC863E232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9456DCFD-4A17-4A38-AFBB-0A211CF8E0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9456DCFD-4A17-4A38-AFBB-0A211CF8E0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9456DCFD-4A17-4A38-AFBB-0A211CF8E0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9456DCFD-4A17-4A38-AFBB-0A211CF8E0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

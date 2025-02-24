@@ -1,0 +1,56 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7195"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/users",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7035
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/users/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7035
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/chat",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/chat",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7207
+        }
+      ]
+    }
+    {
+      "UpstreamPathTemplate": "/gateway/hub/letstalk",
+      "UpstreamHttpMethod": [ "GET","POST" ],
+      "DownstreamPathTemplate": "/hub/letstalk",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7229
+        }
+      ]
+    }
+  
+  ]
+}

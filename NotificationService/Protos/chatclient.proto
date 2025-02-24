@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "NotificationService.Protos";
+
+package chat;
+
+service ChatGrpc {
+	rpc AddChat (AddChatRequest) returns (AddChatResponse);
+}
+
+message AddChatRequest{
+	int32 SenderId=1;
+	int32 RecieverId=2;
+	string content=3;
+}
+
+message AddChatResponse{
+	string resMessage=1;
+}
